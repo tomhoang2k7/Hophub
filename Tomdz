@@ -1,0 +1,33 @@
+local ApiHop = loadstring(game:HttpGet('https://raw.githubusercontent.com/HoangNguyenk8/Scripts/refs/heads/main/Test.lua'))()
+local bm = loadstring(game:HttpGet('https://raw.githubusercontent.com/HoangNguyenk8/Cutsomers/refs/heads/main/CuathangTom.lua'))()
+local LIB = bm:Window(
+    "Tomhoang hub",
+    "Bloxfruit",
+    Enum.KeyCode.RightControl
+)
+Config = {
+    Logo = "rbxassetid://119130179654361",
+    TabColor = Color3.fromRGB(15, 15, 15),
+    StrokeColor = Color3.fromRGB(23, 23, 23),
+    Other = Color3.fromRGB(2, 182, 255),
+    SizeLib = UDim2.new(0, 350, 0, 130)
+}
+local hoppingtab = LIB:Tab("Hopping", "tom hub", "rbxassetid://111112545689883") -- Name/Des/LogoID
+local statustab = LIB:Tab("Status", "", "rbxassetid://133796011846199")
+
+statustab:Line()
+statustab:Button("hub được tom làm", "anh em vào sever discord để được cập nhật nhé", function()
+    ()
+end)
+hoppingtab:Button("Hop Dough King", "finding servers have dough king", function()
+    ApiHop:HopDoughKing()
+end)
+hoppingtab:Button("Hop Rip Indra", "finding servers have rip indra", function()
+    ApiHop:HopRipindra()
+end)
+hoppingtab:Button("Hop Mirage", "finding servers have mirage island", function()
+    ApiHop:HopMirage()
+end)
+hoppingtab:Button("Hop Drakbeard", "tìm", function()
+    ApiHop:HopDrakbeard()
+end)
